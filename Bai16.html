@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">
+function tinh()
+{
+	var luong = parseInt(document.getElementById('dtb1').value)
+	var xeploai = document.getElementById('xloai')
+
+	switch (xeploai)
+	{
+    case "A":
+        var dtb = luong*2;
+        break;
+    case "B":
+        var dtb = luong*1.8;
+        break;
+    case "C":
+        var dtb = luong*1.2;
+        break;
+    case "D":
+        var dtb = luong*1;
+        break;
+	}
+}
+</script>
+<title>Bài 13</title>
+</head>
+<body>
+	<h2 align="center" style="color:#00FF00">Xếp loại cuối năm học</h2>
+	<form id ="Nhap">
+		<table>
+		<tr>
+			<td>Lương: </td>
+			<td><input type="text" name="dtb" id="dtb1" /></td>
+		</tr>
+		<tr>
+			<td>Xếp loại: </td>
+		<td><select id="xloai">
+			<option value="A">Loại A</option>
+			<option value="B">Loại B</option>
+			<option value="C">Loại C</option>
+			<option value="D">Loại D</option>
+			</select>
+
+		</td>
+		</tr>
+		<tr>
+			<td>Tính: </td>
+			<td><input type="text" id="xl" /></td>
+		</tr>
+		<tr>
+			<td colspan="2" style="text-align:center"><input type="button" value="Tính"
+			onclick="tinh()" /></td>
+		</tr>
+		</table>
+	</form>
+</body>
+</html>

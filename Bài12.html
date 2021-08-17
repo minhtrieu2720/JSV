@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script language="javascript">
+	str = 'Chào bạn' + prompt(' Hãy nhập tên của bạn')
+</script>
+<title>Bài 12</title>
+</head>
+<body onload="cauchao.innerText=str">
+	<form id ="Nhập">
+	<table align="center">
+		<tr>
+			<td>
+				<div id="cauchao" style="color:#FF0066"></div></td></tr>
+			</td>
+		</tr>
+		<tr>
+		<td> Nhập tên mới: <input type="text" name="ten" id ="ten" size= "20"></td>
+		</tr>
+		<tr>
+			<td align="center"><input type ="button" name="Yes" value ="Thay đổi câu chào" onclick="cauchao.innerText = ' Chào bạn ' + ten.value"></td>
+		</tr>
+	</table>
+	</form>
+</body>
+</html>
